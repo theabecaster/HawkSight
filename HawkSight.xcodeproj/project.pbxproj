@@ -6,20 +6,65 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		93903E8E2ECC48800076406F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93903E532EC822D40076406F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93903E5A2EC822D40076406F;
+			remoteInfo = HawkSight;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		93903E5B2EC822D40076406F /* HawkSight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HawkSight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93903E8A2ECC48800076406F /* HawkSightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HawkSightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		93903E9F2ECC48FD0076406F /* Exceptions for "HawkSight" folder in "HawkSightTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/AuthRequest.swift,
+				Models/AuthResponse.swift,
+				Models/CameraFrame.swift,
+				Models/CameraIntrinsics.swift,
+				Models/DetectedPose.swift,
+				Models/DeviceInfo.swift,
+				Models/Joint.swift,
+				Models/Message.swift,
+				Models/PoseBroadcast.swift,
+				Models/PoseMatrix.swift,
+			);
+			target = 93903E892ECC48800076406F /* HawkSightTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		93903E5D2EC822D40076406F /* HawkSight */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				93903E9F2ECC48FD0076406F /* Exceptions for "HawkSight" folder in "HawkSightTests" target */,
+			);
 			path = HawkSight;
+			sourceTree = "<group>";
+		};
+		93903E8B2ECC48800076406F /* HawkSightTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HawkSightTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		93903E582EC822D40076406F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93903E872ECC48800076406F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				93903E5D2EC822D40076406F /* HawkSight */,
+				93903E8B2ECC48800076406F /* HawkSightTests */,
 				93903E5C2EC822D40076406F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				93903E5B2EC822D40076406F /* HawkSight.app */,
+				93903E8A2ECC48800076406F /* HawkSightTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +117,29 @@
 			productReference = 93903E5B2EC822D40076406F /* HawkSight.app */;
 			productType = "com.apple.product-type.application";
 		};
+		93903E892ECC48800076406F /* HawkSightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93903E902ECC48800076406F /* Build configuration list for PBXNativeTarget "HawkSightTests" */;
+			buildPhases = (
+				93903E862ECC48800076406F /* Sources */,
+				93903E872ECC48800076406F /* Frameworks */,
+				93903E882ECC48800076406F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93903E8F2ECC48800076406F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				93903E8B2ECC48800076406F /* HawkSightTests */,
+			);
+			name = HawkSightTests;
+			packageProductDependencies = (
+			);
+			productName = HawkSightTests;
+			productReference = 93903E8A2ECC48800076406F /* HawkSightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +152,10 @@
 				TargetAttributes = {
 					93903E5A2EC822D40076406F = {
 						CreatedOnToolsVersion = 26.1;
+					};
+					93903E892ECC48800076406F = {
+						CreatedOnToolsVersion = 26.1;
+						TestTargetID = 93903E5A2EC822D40076406F;
 					};
 				};
 			};
@@ -100,12 +174,20 @@
 			projectRoot = "";
 			targets = (
 				93903E5A2EC822D40076406F /* HawkSight */,
+				93903E892ECC48800076406F /* HawkSightTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		93903E592EC822D40076406F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93903E882ECC48800076406F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +204,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		93903E862ECC48800076406F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93903E8F2ECC48800076406F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93903E5A2EC822D40076406F /* HawkSight */;
+			targetProxy = 93903E8E2ECC48800076406F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		93903E642EC822D50076406F /* Debug */ = {
@@ -310,6 +407,48 @@
 			};
 			name = Release;
 		};
+		93903E912ECC48800076406F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2PVQ496X7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.abrahamgonzalez.HawkSightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HawkSight.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HawkSight";
+			};
+			name = Debug;
+		};
+		93903E922ECC48800076406F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2PVQ496X7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.abrahamgonzalez.HawkSightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HawkSight.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HawkSight";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +466,15 @@
 			buildConfigurations = (
 				93903E672EC822D50076406F /* Debug */,
 				93903E682EC822D50076406F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93903E902ECC48800076406F /* Build configuration list for PBXNativeTarget "HawkSightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93903E912ECC48800076406F /* Debug */,
+				93903E922ECC48800076406F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

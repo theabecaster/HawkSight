@@ -56,3 +56,6 @@ fastlane/test_output
 
 # Claude Code AI assistant instructions
 CLAUDE.md
+**/CLAUDE.md
+.claude/
+**/.claude/
